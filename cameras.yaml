@@ -1,0 +1,41 @@
+# id: camera id, from 1 to 4
+# model: camera manufacturer (supported: realsense, avt, generic )
+# serial_number: camera serial number (can be found by the camera manufacturer viewer).
+# communication_port: port used by redis server to stream acquired frames (use default one 6379)
+# streaming port: port used by flask to stream
+# usage: can be for body detection (holistic), for object detection (detection)
+# notes: a comment for the specific camera
+
+# Available camera serial numbers:
+# AVT:       GigE : DEV_000A47000A96, DEV_000A47000A97
+#            USB  : DEV_1AB22C017130, DEV_1AB22C01712C
+# realsense: USB  : 108322074380, f1121075
+#
+cameras:
+  - id: 1
+    model: "avt"
+    serial_number: "DEV_1AB22C01712C"
+    communication_port: 6379
+    communication_IP: "127.0.0.1"
+    streaming_port: 5001
+    streaming_IP: "127.0.0.1"
+    usage: "detection"
+    notes: "Object detection camera 1"
+  - id: 2
+    model: "realsense"
+    serial_number: "f1121075"
+    communication_port: 6379
+    communication_IP: "127.0.0.1"
+    streaming_port: 5002
+    streaming_IP: "127.0.0.1"
+    usage: "holistic"
+    notes: "Body detection camera"
+  - id: 3
+    model: "avt"
+    serial_number: "DEV_1AB22C017130"
+    communication_port: 6379
+    communication_IP: "127.0.0.1"
+    streaming_port: 5003
+    streaming_IP: "127.0.0.1"
+    usage: "detection"
+    notes: "Object detection camera 2"

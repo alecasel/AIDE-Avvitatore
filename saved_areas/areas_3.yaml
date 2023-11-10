@@ -1,0 +1,27 @@
+rectangles:
+- camera: 3
+  color: !!python/tuple
+  - 255
+  - 0
+  - 0
+  end_point: !!python/tuple
+  - 1938
+  - 573
+  id: 1
+  name: BRUGOLA
+  start_point: !!python/tuple
+  - 1599
+  - 257
+- camera: 3
+  color: !!python/tuple
+  - 0
+  - 0
+  - 255
+  end_point: !!python/tuple
+  - 2121
+  - 940
+  id: 2
+  name: ESAGONALE
+  start_point: !!python/tuple
+  - 1794
+  - 651
